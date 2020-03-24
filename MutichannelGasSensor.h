@@ -41,7 +41,7 @@
 #elif defined(ARDUINO_ARCH_SEEED_STM32F4)
     #define _SERIAL SerialUSB
 #elif defined (ARDUINO_ARCH_SAMD)
-    #define _SERIAL Serial
+    #define _SERIAL SerialUSB
 #elif defined (ARDUINO_ARCH_AVR)
     #define _SERIAL Serial
 #else
@@ -49,7 +49,7 @@
 #endif
 
 
-#define DEFAULT_I2C_ADDR    0x04
+#define DEFAULT_I2C_ADDR    0x19
 
 #define ADDR_IS_SET             0           // if this is the first time to run, if 1126, set 
 #define ADDR_FACTORY_ADC_NH3    2
