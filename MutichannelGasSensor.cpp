@@ -523,9 +523,9 @@ float MutichannelGasSensor::getR0(unsigned char ch) {       // 0:CH3, 1:CO, 2:NO
 
     int a = 0;
     switch (ch) {
-        case 0:         // CH3
+        case 0:         // NH3
             a = get_addr_dta(CMD_READ_EEPROM, ADDR_USER_ADC_HN3);
-            _SERIAL.print("a_ch3 = ");
+            _SERIAL.print("a_nh3 = ");
             _SERIAL.println(a);
             break;
 
