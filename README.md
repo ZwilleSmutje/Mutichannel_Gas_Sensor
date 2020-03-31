@@ -6,28 +6,27 @@ This Arduino library is used for driving "Xadow - Mutichannel Gas Sensor" and "G
 [Grove - Multichannel Gas Sensor](https://www.seeedstudio.com/s/Grove-Multichannel-Gas-Sensor-p-2502.html)
 
 ## Usage:
+gas.begin(); 
 
-mutichannelGasSensor.begin(0x04);
-
-mutichannelGasSensor.powerOn();
+gas.powerOn();
 
 then read the concentration of the specific gas you want to measure:
 
-mutichannelGasSensor.measure_NH3();
+gas.measure_NH3();
 
-mutichannelGasSensor.measure_CO();
+gas.measure_CO();
 
-mutichannelGasSensor.measure_NO2();
+gas.measure_NO2();
 
-mutichannelGasSensor.measure_C3H8();
+gas.measure_C3H8();
 
-mutichannelGasSensor.measure_C4H10();
+gas.measure_C4H10();
 
-mutichannelGasSensor.measure_CH4();
+gas.measure_CH4();
 
-mutichannelGasSensor.measure_H2();
+gas.measure_H2();
 
-mutichannelGasSensor.measure_C2H5OH();
+gas.measure_C2H5OH();
 
 For details please move to [wiki page](http://wiki.seeedstudio.com/Grove-Multichannel_Gas_Sensor/).
  
